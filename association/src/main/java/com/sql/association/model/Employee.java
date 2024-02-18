@@ -2,7 +2,7 @@ package com.sql.association.model;
 
 import java.util.List;
 
-import com.sql.associationn.enums.Department;
+import com.sql.association.enums.Department;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -16,10 +16,12 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Transactional
 @Entity
 @Data
 @NoArgsConstructor
